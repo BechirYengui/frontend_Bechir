@@ -1,0 +1,82 @@
+═══════════════════════════════════════════════════════════════
+  PORTFOLIO BECHIR YENGUI - INSTALLATION RAPIDE
+═══════════════════════════════════════════════════════════════
+
+📦 ÉTAPE 1 : EXTRAIRE LES FICHIERS
+───────────────────────────────────
+Extrayez le contenu de l'archive dans un dossier de votre choix.
+
+
+📝 ÉTAPE 2 : INSTALLER LES DÉPENDANCES
+───────────────────────────────────
+Ouvrez un terminal dans le dossier du projet et exécutez :
+
+    npm install
+
+
+🚀 ÉTAPE 3 : LANCER LE SERVEUR
+───────────────────────────────────
+    npm run dev
+
+Puis ouvrez votre navigateur sur : http://localhost:3000
+
+
+✨ FONCTIONNALITÉS
+───────────────────────────────────
+✅ Dark mode avec bouton flottant en bas à droite
+✅ Navigation responsive
+✅ Animations fluides
+✅ Design moderne
+✅ Sections : Hero, Expérience, Formation, Projets, Compétences, Contact
+
+
+🔧 EN CAS DE PROBLÈME
+───────────────────────────────────
+Si le CSS ne s'affiche pas :
+
+    rm -rf .next
+    npm run dev
+
+Puis rechargez la page avec Ctrl+Shift+R
+
+
+📚 STRUCTURE DES FICHIERS
+───────────────────────────────────
+app/
+  ├── globals.css        → Styles globaux
+  ├── layout.tsx         → Layout principal avec dark mode
+  └── page.tsx           → Page d'accueil
+
+components/
+  ├── Navigation.tsx     → Menu de navigation
+  ├── Hero.tsx           → Section héro
+  ├── Experience.tsx     → Expériences professionnelles
+  ├── Education.tsx      → Formation académique
+  ├── Projects.tsx       → Projets techniques
+  ├── Skills.tsx         → Compétences
+  ├── Contact.tsx        → Formulaire de contact
+  ├── ThemeProvider.tsx  → Gestion du thème
+  └── ThemeToggle.tsx    → Bouton dark mode
+
+
+💡 PERSONNALISATION
+───────────────────────────────────
+Pour modifier le contenu, éditez les fichiers dans components/
+Pour modifier les couleurs, éditez tailwind.config.js
+
+
+🌐 DÉPLOIEMENT
+───────────────────────────────────
+Pour déployer sur Vercel :
+
+    npm i -g vercel
+    vercel
+
+
+📞 SUPPORT
+───────────────────────────────────
+Email : bechir.yengui@imt-atlantique.net
+GitHub : https://github.com/BechirYengui
+
+
+═══════════════════════════════════════════════════════════════
