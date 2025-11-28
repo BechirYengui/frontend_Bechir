@@ -25,17 +25,17 @@ export default function Navigation() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-lg">
+    <nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/80 backdrop-blur-md shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">BY</div>
+          <div className="text-2xl font-bold text-blue-600">BY</div>
           
           <div className="hidden md:flex space-x-8">
             {menuItems.map((item, idx) => (
               <a
                 key={idx}
                 href={item.link}
-                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 font-medium"
+                className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium"
               >
                 {item.title}
               </a>
@@ -44,7 +44,7 @@ export default function Navigation() {
           
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+            className="md:hidden text-gray-700 hover:text-blue-600"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -52,14 +52,14 @@ export default function Navigation() {
       </div>
       
       {isOpen && (
-        <div className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
+        <div className="md:hidden bg-white border-t border-gray-200">
           <div className="px-4 py-4 space-y-3">
             {menuItems.map((item, idx) => (
               <a
                 key={idx}
                 href={item.link}
                 onClick={() => setIsOpen(false)}
-                className="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 font-medium py-2"
+                className="block text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium py-2"
               >
                 {item.title}
               </a>
